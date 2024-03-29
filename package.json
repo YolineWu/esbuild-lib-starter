@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "learn-esbuild",
+  "name": "axios-for-junjian",
   "version": "1.0.0",
   "description": "",
   "type": "module",
