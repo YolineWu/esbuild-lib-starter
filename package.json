@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "esbuild": "0.20.2"
+    "@tsconfig/node21": "^21.0.3",
+    "@types/node": "^20.11.30",
+    "esbuild": "0.20.2",
+    "typescript": "^5.4.3"
   }
 }

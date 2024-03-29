@@ -1,0 +1,11 @@
+{
+  "extends": "@tsconfig/node21/tsconfig.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": ["src"],
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "outDir": "dist"
+  }
+}
