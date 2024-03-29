@@ -1,17 +1,22 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "axios-for-junjian",
+  "name": "esbuild-starter-lib",
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "main.ts",
-  "scripts": {},
+  "main": "./dist/main.js",
+  "scripts": {
+    "dev": "tsx --tsconfig ./tsconfig.node.json ./esbuild/watch.ts",
+    "build": "tsx --tsconfig ./tsconfig.node.json ./esbuild/build.ts"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@tsconfig/node21": "^21.0.3",
     "@types/node": "^20.11.30",
     "esbuild": "0.20.2",
+    "tslib": "^2.6.2",
+    "tsx": "^4.7.1",
     "typescript": "^5.4.3"
   }
 }
