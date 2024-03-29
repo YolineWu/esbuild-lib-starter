@@ -1,7 +1,9 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "learn-esbuild",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "main.ts",
   "scripts": {},
   "author": "",
