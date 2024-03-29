@@ -1,0 +1,9 @@
+{
+  "name": "learn-esbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
