@@ -5,5 +5,8 @@
   "main": "main.ts",
   "scripts": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "0.20.2"
+  }
 }
