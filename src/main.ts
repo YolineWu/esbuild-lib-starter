@@ -1,1 +1,3 @@
-console.log("esbuild-starter-lib");
+import { a } from "./another";
+
+console.log("------", a)

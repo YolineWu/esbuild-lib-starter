@@ -6,7 +6,7 @@
   "type": "module",
   "main": "./dist/main.js",
   "scripts": {
-    "dev": "tsx --tsconfig ./tsconfig.node.json ./esbuild/watch.ts",
+    "dev": "tsx watch --tsconfig ./tsconfig.node.json ./esbuild/watch.ts",
     "build": "tsx --tsconfig ./tsconfig.node.json ./esbuild/build.ts"
   },
   "author": "",
