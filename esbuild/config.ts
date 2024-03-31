@@ -1,18 +1,5 @@
-import { BuildOptions, type Plugin, type PluginBuild } from "esbuild";
-import { rm } from "fs/promises";
+import { BuildOptions } from "esbuild";
 import pkg from "../package.json";
-
-/** A plugin for deleting the `./dist` directory when a build start */
-const deleteDistPlugin: Plugin = {
-  name: "delete-dist",
-  setup(build: PluginBuild) {
-    build.onStart(async () => {
-      console.log("Deleting the `./dist` directory...");
-      await rm("./dist", { force: true, recursive: true });
-      console.log("the `./dist` directory has been deleted.");
-    });
-  },
-};
 
 /** The build options */
 export const config: BuildOptions = {
@@ -30,7 +17,4 @@ export const config: BuildOptions = {
 
   // Source maps
   sourcemap: "linked",
-
-  // Plugins
-  plugins: [deleteDistPlugin],
 };

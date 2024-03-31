@@ -1,3 +1,8 @@
-import { a } from "./another";
+/** This is comment for a */
+const a: {
+  test: string;
+  num: 1;
+} = { test: "111", num: 1 };
 
-console.log("------", a)
+/** This is comment for export */
+export { a };

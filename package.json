@@ -5,16 +5,17 @@
   "description": "",
   "type": "module",
   "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
   "scripts": {
-    "dev": "tsx watch --tsconfig ./tsconfig.node.json ./esbuild/watch.ts",
-    "build": "tsx --tsconfig ./tsconfig.node.json ./esbuild/build.ts"
+    "build": "rimraf dist && tsc --project ./tsconfig.types.json && tsx --tsconfig ./tsconfig.node.json ./esbuild/build.ts"
   },
-  "author": "",
+  "author": "yoline <wu.yoline@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@tsconfig/node21": "^21.0.3",
     "@types/node": "^20.11.30",
     "esbuild": "0.20.2",
+    "rimraf": "^5.0.5",
     "tslib": "^2.6.2",
     "tsx": "^4.7.1",
     "typescript": "^5.4.3"
