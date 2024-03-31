@@ -10,7 +10,7 @@
     "build": "rimraf dist && tsc --project ./tsconfig.types.json && tsx --tsconfig ./tsconfig.node.json ./esbuild/build.ts"
   },
   "author": "yoline <wu.yoline@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@tsconfig/node21": "^21.0.3",
     "@types/node": "^20.11.30",
